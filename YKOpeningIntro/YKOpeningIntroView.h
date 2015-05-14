@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YKOpeningIntroView : UIView
+@protocol YKOpeningIntroViewDelegate <NSObject>
+- (void)finishIntroAction;
+@end
 
+@interface YKOpeningIntroView : UIView
+@property (nonatomic, weak) id<YKOpeningIntroViewDelegate> delegate;
 @end

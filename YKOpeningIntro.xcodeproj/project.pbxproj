@@ -14,6 +14,7 @@
 		B0BEA93A1ACA822100B2A9D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BEA9391ACA822100B2A9D4 /* Images.xcassets */; };
 		B0BEA93D1ACA822100B2A9D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0BEA93B1ACA822100B2A9D4 /* LaunchScreen.xib */; };
 		B0BEA9491ACA822100B2A9D4 /* YKOpeningIntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEA9481ACA822100B2A9D4 /* YKOpeningIntroTests.m */; };
+		B0BEA9541ACA825400B2A9D4 /* YKOpeningIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEA9531ACA825400B2A9D4 /* YKOpeningIntroView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B0BEA9421ACA822100B2A9D4 /* YKOpeningIntroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKOpeningIntroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BEA9471ACA822100B2A9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0BEA9481ACA822100B2A9D4 /* YKOpeningIntroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKOpeningIntroTests.m; sourceTree = "<group>"; };
+		B0BEA9521ACA825400B2A9D4 /* YKOpeningIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKOpeningIntroView.h; sourceTree = "<group>"; };
+		B0BEA9531ACA825400B2A9D4 /* YKOpeningIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKOpeningIntroView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				B0BEA9391ACA822100B2A9D4 /* Images.xcassets */,
 				B0BEA93B1ACA822100B2A9D4 /* LaunchScreen.xib */,
 				B0BEA92C1ACA822100B2A9D4 /* Supporting Files */,
+				B0BEA9521ACA825400B2A9D4 /* YKOpeningIntroView.h */,
+				B0BEA9531ACA825400B2A9D4 /* YKOpeningIntroView.m */,
 			);
 			path = YKOpeningIntro;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				B0BEA9351ACA822100B2A9D4 /* ViewController.m in Sources */,
 				B0BEA9321ACA822100B2A9D4 /* AppDelegate.m in Sources */,
+				B0BEA9541ACA825400B2A9D4 /* YKOpeningIntroView.m in Sources */,
 				B0BEA92F1ACA822100B2A9D4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

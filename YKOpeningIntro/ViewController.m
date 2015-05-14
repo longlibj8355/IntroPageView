@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "YKOpeningIntroView.h"
 
-@interface ViewController ()
+@interface ViewController () <YKOpeningIntroViewDelegate>
+
+@property (nonatomic, strong) YKOpeningIntroView *openingView;
 
 @end
 
@@ -16,12 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.openingView = [[YKOpeningIntroView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:self.openingView];
+    self.openingView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - YKOpeningIntroViewDelegate
+- (void)finishIntroAction
+{
+    [UIView animateWithDuration:1.f animations:^{
+        self.openingView.alpha = 0.f;
+    } completion:^(BOOL finished) {
+        [self.openingView removeFromSuperview];
+    }];
+    
 }
 
 @end
